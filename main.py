@@ -5,7 +5,7 @@ from fastapi import FastAPI
 
 app = FastAPI()
 appenv = os.environ['ARGENV']
-@app.get("/")
+@app.get("/hello")
 async def root():
     return {
         "message": "World",
