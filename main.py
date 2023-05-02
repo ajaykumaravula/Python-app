@@ -4,7 +4,7 @@ import os
 from fastapi import FastAPI
 
 app = FastAPI()
-appenv = os.environ['APPENV']
+appenv = os.environ['ARGENV']
 @app.get("/")
 async def root():
     return {
